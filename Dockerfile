@@ -14,7 +14,6 @@ RUN dotnet add package FSharp.Core && \
 ENV PATH="$PATH:/root/.dotnet/tools:/root/.cargo/bin"
 RUN dotnet interactive jupyter install && \
     dotnet nuget locals all -c &&  \
-    cargo install sccache && \
     cargo install evcxr_jupyter && \
     cargo install cargo-script && \
     pip install rust-magic && \
