@@ -17,5 +17,5 @@ RUN dotnet interactive jupyter install && \
     cargo install sccache && \
     cargo install evcxr_jupyter && \
     cargo install cargo-script && \
-    pip install --platform rust-magic && \
+    pip install rust-magic && \
     evcxr_jupyter --install
