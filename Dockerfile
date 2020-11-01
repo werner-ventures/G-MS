@@ -18,3 +18,4 @@ RUN dotnet interactive jupyter install && \
     cargo install cargo-script && \
     pip install rust-magic && \
     evcxr_jupyter --install
+WORKDIR "/"
