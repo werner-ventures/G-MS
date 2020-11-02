@@ -1,6 +1,5 @@
 FROM werner01ai/g-py
-RUN conda install xeus-cling && \
-    wget https://dist.nuget.org/win-x86-commandline/latest/nuget.exe && \
+RUN wget https://dist.nuget.org/win-x86-commandline/latest/nuget.exe && \
     dotnet new --install Boxed.Templates && \
     dotnet new nuget --name "N30"
 WORKDIR "/N30/Source/N30"
